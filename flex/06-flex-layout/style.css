@@ -1,14 +1,71 @@
+/* BASIC STYLING */
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: gray;
+}
+
+img {
+  width: 600px;
+}
+
+/* FLEX */
 
 body {
   height: 100vh;
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-img {
-  width: 600px;
+/* HEADER */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2px;
+  margin-top: 2px;
+  border-top: 2px solid lightgray;
+}
+.left-links,
+.right-links {
+  display: flex;
+  padding: 0px;
+  gap: 10px;
+  align-items: center;
+}
+.left-links {
+  margin-left: 10px;
+}
+.right-links {
+  margin-right: 10px;
+}
+
+/* MIDDLE */
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+input {
+  border: 1px solid #ddd;
+  border-radius: 16px;
+  padding: 8px 24px;
+  width: 400px;
+  margin-bottom: 10px;
 }
 
 button {
@@ -18,9 +75,12 @@ button {
   background: #eee;
 }
 
-input {
-  border: 1px solid #ddd;
-  border-radius: 16px;
-  padding: 8px 24px;
-  width: 400px;
+/* FOOTER */
+
+.footer {
+  border: 1px solid blue;
+  background-color: #eeeeee;
+  display: flex;
+  justify-content: space-between;
+  padding: 1px;
 }
